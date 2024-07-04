@@ -1,24 +1,27 @@
-# VPROOF
+# VPROOF-Know Your Customer
 
 ## Installation
 
 To install the models from a Google Drive link and install all the required dependencies, you can use the following steps:
 
-1. Install the necessary dependencies:
+1. Install the models:
 
 ```bash
 pip install gdown
 
-gdown --id 1u3Q8pn7fq_QwSDt8kR9xHhe01TGps18D --output models.zip
+gdown --id 16eqPxb87lYZDRJTyn9d3OY13ylEfAthp --output models.zip
 
 unzip models.zip -d models
 
 pip install ./models
 
+2. Install the required dependencies
+
 pip install -r requirements.txt
 
-postgresql://arbab:0312o2o2m.2@host:port/kyc
-``
+3. To run the backend apis using FASTApi in swagger:
+uvicorn combined_apis:app --reload
+
 
 
 sudo apt-get update
